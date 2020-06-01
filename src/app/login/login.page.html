@@ -1,0 +1,35 @@
+﻿<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+                <div text-center>
+                    <h4 style="font-weight:700;">Welcome to Mitais!</h4>
+                    <h4 style="font-weight:700;">SIGN IN</h4>
+                </div>
+                <div padding>
+                    <ion-button fill="clear" class="btn-primary" (click)="googleLogin()">
+                        <ion-icon name="logo-google"></ion-icon> &nbsp; Sign in with Goolge
+                    </ion-button> <br />
+                    <ion-button fill="clear" class="btn-fb" (click)="fbLogin()">
+                        <ion-icon name="logo-facebook"></ion-icon> &nbsp; Sign in with Facebook
+                    </ion-button>
+                    <ion-row>
+                        <p class="via-goo">Or</p>
+                    </ion-row>
+                    <div padding>
+                        <ion-item>
+                            <ion-label color="ligh-grey" position="floating">Username</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label color="ligh-grey" position="floating">Password</ion-label>
+                            <ion-input type="password"></ion-input>
+                        </ion-item>
+                    </div>
+                    <ion-button fill="clear" class="btn-primary" (click)="googleLogin('google')"
+                        routerDirection="forward">SIGN IN</ion-button>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

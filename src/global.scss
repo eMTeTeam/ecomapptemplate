@@ -1,0 +1,132 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    background: #fff;
+}
+.menuHeader {
+    --background: #f9b612 !important;
+}
+.menuTitle {
+    --color: #fff !important;
+    font-weight:700;
+}
+.menuItem:hover {
+    --color: #3453c4;
+    font-weight:600;
+}
+.action-sheet-cancel {
+    color: #e51d23 !important;
+}
+.action-sheet-button.sc-ion-action-sheet-ios{
+    color:#3453c4;
+}
+.cart-modal {
+    --height: 80%;
+   --border-radius: 10px;
+   padding: 10px;
+  }
+
+//
+
+  //$btncolor: #00bceb;
+  $btncolor: #fc0d0d;
+  $bgcolor:#f9f8f8;
+
+ion-content, .sc-ion-label-md-s h2, .sc-ion-label-md-s p ,.sc-ion-label-md-s, app-address ion-item  {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+}  
+.btn-primary {
+    border: 1px solid $btncolor;
+    background-color: $btncolor;
+    border-radius: 3px;
+    color: white;
+}
+.product .product-card.sc-ion-card-md-h , .product .list-md, .sell-pro ion-list , .cart-basket,
+.cart-basket .list-md, ion-searchbar{
+    background-color: $bgcolor;
+    --background: $bgcolor;
+}
+.cart-length , .btn-heart {
+    color: $btncolor;
+}
+.cart-basket .crt-inc ion-icon {
+    columns: $btncolor;
+}
+.cart-basket .btn-by-now {
+    --background-activated: $btncolor;
+  --background: $btncolor;
+  background-color: $btncolor;
+  --background-focused: $btncolor;
+  --background-hover: $btncolor;
+}
+.cart-basket {
+    
+     /* On mouse-over, add a grey background color */
+     .container:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+      
+      /* When the checkbox is checked, add a blue background */
+      .container input:checked ~ .checkmark {
+        background-color: $btncolor;
+      }
+}
+
+ion-chip {
+    background-color: #ffcbcb;
+    border-radius: 3px;
+    margin: 0;
+    float: right;
+    height: 27px;
+
+    ion-label , a  { 
+        color: $btncolor !important;
+    }
+}
+
+.my-custom-modal-css .modal-wrapper {
+    // height: 50%;
+    // width: 70%;
+    // top: 50%;
+    // position: absolute; 
+    // display: block;  
+    --width:90%;
+    --height: 60%;
+    --border-radius: 10px;
+    padding: 10px;
+ }
+
+ .btn-fb {
+    border: 1px solid #3453c4;
+    background-color: #3453c4;
+    border-radius: 3px;
+    color: white;
+}
+
